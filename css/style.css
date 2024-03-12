@@ -1,0 +1,83 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 10px solid #000000;
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #702082;
+    background: #90EE90;
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: #702082;
+  }
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #CFC096;
+    color: #9B9A6D;
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.green-dino {
+  align-items: center;
+}
